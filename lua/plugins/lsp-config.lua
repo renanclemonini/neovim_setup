@@ -27,6 +27,7 @@ return {
       vim.lsp.enable({"lua_ls", "pyright", "ruff"})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({"n","v"}, "gra", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
     end
   },
 }
